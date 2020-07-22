@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,31,129,1) 0%, rgba(43,27,87,1) 100%);
+    color: white;
+    font-family: 'Roboto';
+    min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+img{
+    padding: 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#formulaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#formulaire form {
+    width: 30%;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+.user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #9392B6;
+    font-size: 12px;
+  }
+
+#button {
+    display: flex;
+    justify-content: center;
+
+}
+  
+#formulaire a {
+	background-color:#ffffff;
+	border-radius:28px;
+	cursor:pointer;
+	color:#2d3345;
+	font-family:'Roboto';
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+  }
+  
+#formulaire a:hover {
+    transition: 0.3s;
+    background-color:#cfcfcf;
+  }
+
+#mdp {
+    display: flex;
+    justify-content: center;
+}
+
+#mdp a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
